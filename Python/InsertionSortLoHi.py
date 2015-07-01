@@ -4,7 +4,7 @@ influenced by Skiena's C implementation. Each i iteration is then sorted
 through stepwise comparison using iterations of j. For example, if list[j]
 is less than its neighbor to the left, they are swapped and then j = j-1.
 This allows the comparison to be made again to the left until it is sorted.
-The main loop, i, moves right again via an increment of I and the process
+The main loop, i, moves right again via an increment of i and the process
 repeats for the i/jth element. Each element gets sorted and inserted into
 its "proper" place in a growing, sorted list on the left before another
 item is selected via i. So in this code, i selects the item to be sorted
