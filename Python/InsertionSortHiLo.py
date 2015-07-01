@@ -1,7 +1,7 @@
 '''
 This is a basic insertion sort in Python, though the structure is definitely
-influenced by Skiena's C implementation. Each i iteration is then sorted
-through stepwise comparison using iterations of j. For example, if list[j]
+influenced by Skiena's C implementation. Each i iteration is sorted
+through stepwise comparisons using iterations of j. For example, if list[j]
 is less than its neighbor to the left, they are swapped and then j = j-1.
 This allows the comparison to be made again to the left until it is sorted.
 The main loop, i, moves right again via an increment of I and the process
