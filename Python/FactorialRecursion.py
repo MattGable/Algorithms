@@ -16,14 +16,18 @@ and so on. This code also assumes the user will only enter integers!
 def factorial(n):
 
     if n == 0:
-        return n
+        return 1
     if n == 1:
         return n
     elif n > 1:
         return n * factorial(n - 1)    
 
-
-print factorial(2)
+#Print some basic test values for this function
+print "factorial(0) is: ", factorial(0)
+print "factorial(1) is: ", factorial(1)
+print "factorial(2) is: ", factorial(2)
+print "factorial(6) is: ", factorial(6)
+print "factorial(20) is: ", factorial(20)
 
 
         
