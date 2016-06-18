@@ -23,9 +23,9 @@ public class KnuthFisherYatesShuffler
 		
 		int n = inputArray.length;
 		
-		for (int i = 0; i < n; i ++)
+		for (int i = 0; i < inputArray.length; i ++)
 		{
-			//Decrement n so we essentially pull from the numbers without replacement 
+			//Decrement n so we essentially pull from the range of indexes with less (probabilistic) replacement 
 			swap(inputArray, i, rand.nextInt(n--));
 		}
 		
