@@ -28,7 +28,6 @@ public class KnuthFisherYatesShuffler
 			//Decrement n so we essentially pull from the range of indexes with less (probabilistic) replacement 
 			swap(inputArray, i, rand.nextInt(n--));
 		}
-		
 		System.out.println("The inputArray after shuffling is: " + Arrays.toString(inputArray));
 	}
 	
