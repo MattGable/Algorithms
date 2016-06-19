@@ -1,10 +1,20 @@
 package com.dataStructures;
 
+/**
+ * an object that holds a list of singly-linked nodes.
+ * @author Matt
+ *
+ * @param <T> the type of object that this linked list will hold in its nodes
+ */
 public class LinkedList<T>
 {
 	private Node<T> head;
 	private Node<T> tail;
 	
+	/**
+	 * adds a new node to the linked list.
+	 * @param newNode the value of the new node to be added to the linked list.
+	 */
 	public void addNode (T newNode)
 	{
 		Node<T> temp = new Node<T>();
@@ -22,9 +32,13 @@ public class LinkedList<T>
 		}
 	}
 	
+	/**
+	 * prints the values of each node in the linked list.
+	 */
 	public void printList ()
 	{
 		Node<T> current = head;
+		
 		while (current != null)
 		{
 			System.out.println("Current node's value: " + current.getValue());
