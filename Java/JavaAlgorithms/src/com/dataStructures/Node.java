@@ -6,12 +6,19 @@ public class Node<T>
 	private T value;
 	private Node<T> nextRef;
 	
+	/**
 	public Node (T inputValue)
 	{
 		value = inputValue;
 	}
+	*/
 	
-	public T getValue()
+	public void setValue (T inputValue)
+	{
+		value = inputValue;
+	}
+	
+	public T getValue ()
 	{
 		return value;
 	}
@@ -19,5 +26,10 @@ public class Node<T>
 	public void setNextRef (Node <T> ref)
 	{
 		nextRef = ref;
+	}
+	
+	public Node<T> getNextRef ()
+	{
+		return nextRef;
 	}
 }
