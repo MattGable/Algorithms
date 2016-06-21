@@ -13,6 +13,7 @@ public class Client
 		//Add new nodes with integer literals (autoboxed)
 		newList.addNode(45);
 		newList.addNode(55);
+		newList.addNode(33933);
 		
 		//Add a new node as an Integer object
 		newList.addNode(new Integer(99));
