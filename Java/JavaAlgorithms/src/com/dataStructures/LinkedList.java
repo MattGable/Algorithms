@@ -41,7 +41,16 @@ public class LinkedList<T>
 		
 		while (current != null)
 		{
+			if ( current.equals(head))
+			{
+				System.out.print("HEAD: ");
+			}
+			if (current.equals(tail))
+			{
+				System.out.print("TAIL: ");
+			}
 			System.out.println("Current node's value: " + current.getValue());
+			System.out.println("Node's current getNextRef: " + current.getNextRef());
 			current = current.getNextRef();
 		}
 		if (current == null)
