@@ -18,8 +18,10 @@ public class HashTable
 	 */
 	public HashTable (int inputTableSize)
 	{
-		//Declare and initialize the size of the array (e.g. number of buckets)
+		//Initialize the number of buckets based on input
 		tableSize = inputTableSize;
+		
+		//Initialize the size of the array (based on the number of buckets)
 		tableArray = new String [tableSize];
 	}
 	
