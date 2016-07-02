@@ -1,7 +1,8 @@
 package com.dataStructures;
 
 /**
- * the main client for the dataStructures package classes.
+ * the main client for the dataStructures package classes. This contains some
+ * code for testing the various dataStructures classes. 
  * @author Matt
  */
 public class Client 
