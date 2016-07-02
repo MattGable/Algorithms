@@ -1,14 +1,14 @@
 package com.algorithms;
 
 /**
- * the client class for the JavaAlgorithms package
+ * the client class for testing the JavaAlgorithms package.
  * @author Matt
  */
-public class Client 
+public class TestingClient 
 {
 	/**
-	 * the client class's main method
-	 * @param args the standard array of Strings in the main method
+	 * the client class's main method.
+	 * @param args the standard array of Strings in the main method.
 	 */
 	public static void main (String [] args)
 	{

@@ -5,13 +5,14 @@ import java.util.Random;
 
 /**
  * an implementation of the Knuth/Fisher-Yates shuffle.
+ * Time complexity: O(n).
  * @author Matt
  */
 public class KnuthFisherYatesShuffler 
 {
 	
 	/**
-	 * performs the Knuth/Fisher-Yates shuffle on an array of integers (O(n)).
+	 * performs the Knuth/Fisher-Yates shuffle on an array of integers.
 	 * @param inputArray the array of integers to be shuffled.
 	 */
 	public void intShuffler (int [] inputArray)

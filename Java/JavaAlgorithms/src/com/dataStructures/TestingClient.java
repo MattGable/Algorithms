@@ -5,10 +5,11 @@ package com.dataStructures;
  * code for testing the various dataStructures classes. 
  * @author Matt
  */
-public class Client 
+public class TestingClient 
 {
 	public static void main (String[] args)
 	{
+		//===TESTING LINKEDLIST
 		LinkedList<Integer> newList = new LinkedList();
 		
 		//Add new nodes with integer literals (autoboxed)
@@ -19,6 +20,15 @@ public class Client
 		newList.addNode(new Integer(99));
 		
 		newList.printList();
+		
+		//===TESTING HASHTABLE
+		HashTable newHashTable = new HashTable(3);
+		
+		newHashTable.addMember("aarkvark");
+		newHashTable.addMember("bee");
+		newHashTable.addMember("crow");
+		newHashTable.printTable();
+		
 	}
 
 }
