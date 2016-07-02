@@ -22,10 +22,14 @@ public class HashTable
 		tableSize = inputTableSize;
 		tableArray = new String [tableSize];
 	}
+	
+	/**
+	 * Hashes a the new member's key and adds it to the hash table. 
+	 * @param key the key to be added to the hash table.
+	 */
 	public void addMember (String key)
 	{
 		tableArray[simpleHash(key)] = key;
-		
 	}
 	
 	/**
@@ -42,6 +46,10 @@ public class HashTable
 		return hash;
 	}
 	
+	/**
+	 * Prints each value of the hash table to the console starting with the
+	 * first member of the table.
+	 */
 	public void printTable ()
 	{
 		for (int i = 0; i < tableArray.length; i++)
