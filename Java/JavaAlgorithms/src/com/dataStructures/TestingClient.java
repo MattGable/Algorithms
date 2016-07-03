@@ -27,6 +27,9 @@ public class TestingClient
 		newHashTable.addMember("aarkvark");
 		newHashTable.addMember("bee");
 		newHashTable.addMember("crow");
+		
+		newHashTable.getSampleIndex("dreadfort");
+		
 		newHashTable.printTable();
 		
 	}

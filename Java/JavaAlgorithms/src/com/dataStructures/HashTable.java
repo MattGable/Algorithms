@@ -27,22 +27,36 @@ public class HashTable
 	
 	/**
 	 * Hashes a the new member's key and adds it to the hash table. 
-	 * @param key the key to be added to the hash table.
+	 * @param inputKey the key to be added to the hash table.
 	 */
-	public void addMember (String key)
+	public void addMember (String inputKey)
 	{
-		tableArray[simpleHash(key)] = key;
+		tableArray[simpleHash(inputKey)] = inputKey;
+	}
+	
+	/**
+	 * Computes a sample hash and returns the sample value for a given string.
+	 * @param inputKey the key to be hashed.
+	 * @return the hash table index of the input key string.
+	 */
+	public int getSampleIndex (String inputKey)
+	{
+		int index = simpleHash(inputKey);
+		
+		System.out.println("The index for the key of " + inputKey + " is " + index);
+		
+		return index;
 	}
 	
 	/**
 	 * A simple hash that gets an index based on the integer value of the 
 	 * first character of the key string.
-	 * @param key the string value to be stored in the hash table (in lower case).
+	 * @param inputKey the string value to be stored in the hash table (in lower case).
 	 * @return the hash value.
 	 */
-	public int simpleHash (String key)
+	public int simpleHash (String inputKey)
 	{
-		int hash = Character.getNumericValue(key.charAt(0)) - Character.getNumericValue('a');
+		int hash = Character.getNumericValue(inputKey.charAt(0)) - Character.getNumericValue('a');
 		System.out.println("The result of the hash is: " + hash);
 		
 		return hash;
@@ -56,8 +70,7 @@ public class HashTable
 	{
 		for (int i = 0; i < tableArray.length; i++)
 		{
-			System.out.println(	"The key stored at index " + i + " is: " +
-								tableArray[i]);
+			System.out.println(	"|The key stored at index " + i + " is: " + tableArray[i] + "|");
 		}
 	}
 }
