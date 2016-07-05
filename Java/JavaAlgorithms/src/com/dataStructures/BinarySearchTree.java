@@ -1,10 +1,6 @@
 package com.dataStructures;
 
-public class BinarySearchTree
+public class BinarySearchTree <T>
 {
-	public BinarySearchTree ()
-	{
-		
-	}
-
+	BSTNode<T> root = null;
 }
