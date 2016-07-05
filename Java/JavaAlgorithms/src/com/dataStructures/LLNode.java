@@ -6,11 +6,11 @@ package com.dataStructures;
  *
  * @param <T> the type of object that is held by this node.
  */
-public class Node<T>
+public class LLNode<T>
 {
 	//Singly-linked node
 	private T value;
-	private Node<T> nextRef;
+	private LLNode<T> nextRef;
 	
 	
 	/**
@@ -32,7 +32,7 @@ public class Node<T>
 	/**
 	 * @param ref the node to set as the next node in the linked lists's sequence.
 	 */
-	public void setNextRef (Node <T> ref)
+	public void setNextRef (LLNode <T> ref)
 	{
 		nextRef = ref;
 	}
@@ -40,7 +40,7 @@ public class Node<T>
 	/**
 	 * @return the reference to the next node.
 	 */
-	public Node<T> getNextRef ()
+	public LLNode<T> getNextRef ()
 	{
 		return nextRef;
 	}

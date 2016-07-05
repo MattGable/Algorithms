@@ -8,8 +8,8 @@ package com.dataStructures;
  */
 public class LinkedList<T>
 {
-	private Node<T> head;
-	private Node<T> tail;
+	private LLNode<T> head;
+	private LLNode<T> tail;
 	
 	/**
 	 * adds a new node to the linked list.
@@ -17,7 +17,7 @@ public class LinkedList<T>
 	 */
 	public void addNode (T newNode)
 	{
-		Node<T> temp = new Node<T>();
+		LLNode<T> temp = new LLNode<T>();
 		temp.setValue(newNode);
 		
 		if (head == null)
@@ -37,7 +37,7 @@ public class LinkedList<T>
 	 */
 	public void printList ()
 	{
-		Node<T> current = head;
+		LLNode<T> current = head;
 		
 		while (current != null)
 		{
