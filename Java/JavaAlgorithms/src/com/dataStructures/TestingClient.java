@@ -32,6 +32,12 @@ public class TestingClient
 		
 		newHashTable.printTable();
 		
+		//TESTING BINARY SEARCH TREE
+		BinarySearchTree <String> newBinarySearchTree = new BinarySearchTree();
+		
+		newBinarySearchTree.addBSTNode("test");
+		newBinarySearchTree.printTreeRoot();
+		
 	}
 
 }

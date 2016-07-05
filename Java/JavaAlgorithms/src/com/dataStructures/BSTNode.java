@@ -6,5 +6,15 @@ public class BSTNode <T>
 	
 	private BSTNode<T> leftNode;
 	private BSTNode<T> rightNode;
+	
+	public void setValue (T inputValue)
+	{
+		value = inputValue;
+	}
+	
+	public T getValue ()
+	{
+		return value;
+	}
 
 }
