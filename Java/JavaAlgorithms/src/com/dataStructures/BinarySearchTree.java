@@ -12,8 +12,6 @@ package com.dataStructures;
  * http://cslibrary.stanford.edu/110/BinaryTrees.html
  * 
  * @author Matt
- *
- * @param <T> the generic type of the node the tree holds
  */
 public class BinarySearchTree
 {
@@ -34,7 +32,10 @@ public class BinarySearchTree
 		}
 	}
 	
-	
+	/**
+	 * TODO: Probably get rid of this function. 
+	 * a simple function to print the root node of the tree
+	 */
 	public void printTreeRoot ()
 	{
 		System.out.println(root.getValue());
