@@ -15,8 +15,8 @@ package com.dataStructures;
  */
 public class BinarySearchTree
 {
-	
-	BstNode root;
+	//TODO: public for testing
+	public BstNode root;
 	
 	public BstNode getRoot ()
 	{
@@ -31,8 +31,11 @@ public class BinarySearchTree
 		{
 			inputNode = new BstNode();
 			inputNode.setValue(inputValue);
+			System.out.println("inputNode is: " + inputNode.getValue());
 			return;
 		}
+		
+		/**
 		//Base case if the inputNode's value is zero (blank),
 		//then place the value at that node and return
 		if (inputNode.getValue() == 0)
@@ -40,7 +43,7 @@ public class BinarySearchTree
 			inputNode.setValue(inputValue);
 			return;
 		}
-
+		**/
 		else if (inputValue <= inputNode.getValue())
 		{
 			insertNode (inputNode.getLeftNode(), inputValue);
