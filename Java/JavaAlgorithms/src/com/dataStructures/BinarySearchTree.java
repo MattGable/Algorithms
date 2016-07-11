@@ -26,6 +26,11 @@ public class BinarySearchTree
 	//TODO: Finish implementation
 	public void insertNode (BstNode inputNode, int inputValue)
 	{
+		if (root == null)
+		{
+			root = new BstNode();
+			root.setValue(inputValue);
+		}
 		//Base case if a node object reference is null
 		if (inputNode == null)
 		{
