@@ -2,7 +2,7 @@ package com.dataStructures;
 
 public class BstNode
 {
-	private int value;
+	private int value = 0;
 	
 	private BstNode leftNode;
 	private BstNode rightNode;

@@ -34,10 +34,13 @@ public class TestingClient
 		
 		//TESTING BINARY SEARCH TREE
 		BinarySearchTree newBinarySearchTree = new BinarySearchTree();
+		BstNode testNode = new BstNode();
 		
-		newBinarySearchTree.addBSTNode(21);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 4);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 1);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 3);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 6);
 		newBinarySearchTree.printTreeRoot();
-		newBinarySearchTree.lookup(21);
 		
 	}
 
