@@ -40,16 +40,7 @@ public class BinarySearchTree
 			return;
 		}
 		
-		/**
-		//Base case if the inputNode's value is zero (blank),
-		//then place the value at that node and return
-		if (inputNode.getValue() == 0)
-		{
-			inputNode.setValue(inputValue);
-			return;
-		}
-		**/
-		else if (inputValue <= inputNode.getValue())
+		if (inputValue <= inputNode.getValue())
 		{
 			insertNode (inputNode.getLeftNode(), inputValue);
 		}
