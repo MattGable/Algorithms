@@ -32,14 +32,20 @@ public class TestingClient
 		
 		newHashTable.printTable();
 		
-		//TESTING BINARY SEARCH TREE
+		//===TESTING BINARY SEARCH TREE
 		BinarySearchTree newBinarySearchTree = new BinarySearchTree();
+		
+		BinarySearchTree emptyTree = new BinarySearchTree();
 		
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 4);
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 1);
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 3);
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 6);
+		
 		newBinarySearchTree.printTreeRoot();
+
+		
+		System.out.println(emptyTree.size());
 		
 	}
 

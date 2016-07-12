@@ -15,8 +15,7 @@ package com.dataStructures;
  */
 public class BinarySearchTree
 {
-	//TODO: public for testing
-	public BstNode root;
+	private BstNode root;
 	
 	public BstNode getRoot ()
 	{
@@ -26,11 +25,14 @@ public class BinarySearchTree
 	//TODO: Finish implementation
 	public void insertNode (BstNode inputNode, int inputValue)
 	{
+		//Base case if root is null
 		if (root == null)
 		{
 			root = new BstNode();
 			root.setValue(inputValue);
+			return;
 		}
+		
 		//Base case if a node object reference is null
 		if (inputNode == null)
 		{
@@ -40,6 +42,7 @@ public class BinarySearchTree
 			return;
 		}
 		
+		//Check inputValue against current value of node
 		if (inputValue <= inputNode.getValue())
 		{
 			insertNode (inputNode.getLeftNode(), inputValue);
@@ -54,8 +57,7 @@ public class BinarySearchTree
 	}
 	
 	/**
-	 * TODO: Probably get rid of this function 
-	 * a simple function to print the root node of the tree
+	 * A function to print the root node's value
 	 */
 	public void printTreeRoot ()
 	{
@@ -63,14 +65,34 @@ public class BinarySearchTree
 		{
 			System.out.println(root.getValue());
 		}
-		//TODO: clean this up
-		else if (root == null)
+
+		else //if (root == null)
 		{
 			System.out.println("Root is null");
 		}
 		
 	}
 	
+	//TODO: Finish implementation here!!
+	public int size ()
+	{
+		return size(root);
+	}
+	
+	private int size (BstNode inputNode)
+	{
+		if (inputNode == null)
+		{
+			return 0;
+		}
+		else
+		{
+			return 111;
+		}
+	}
+	
+	
+	//TODO: complete this implementation
 	public boolean lookup (int lookupValue)
 	{
 		BstNode currentNode = root;
