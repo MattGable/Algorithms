@@ -25,6 +25,7 @@ public class BinarySearchTree
 	//TODO: Finish implementation
 	public void insertNode (BstNode inputNode, int inputValue)
 	{
+		/**
 		//Base case if root is null
 		if (root == null)
 		{
@@ -32,7 +33,7 @@ public class BinarySearchTree
 			root.setValue(inputValue);
 			return;
 		}
-		
+		**/
 		//Base case if a node object reference is null
 		if (inputNode == null)
 		{
