@@ -81,7 +81,6 @@ public class BinarySearchTree
 	//TODO: Fix implementation!
 	private int size (BstNode inputNode)
 	{
-		
 		if (inputNode == null)
 		{
 			return 0;
