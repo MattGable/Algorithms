@@ -43,6 +43,9 @@ public class TestingClient
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 6);
 		
 		newBinarySearchTree.printTreeRoot();
+		
+		//System.out.println("Root's left: " + newBinarySearchTree.getRoot().getLeftValue());
+		//System.out.println("Root's right: " + newBinarySearchTree.getRoot().getRightValue());
 
 		
 		System.out.println("EMpty tree size is: " + emptyTree.size());
