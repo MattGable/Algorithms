@@ -88,11 +88,13 @@ public class BinarySearchTree
 		
 		else if (inputNode.getLeftNode() != null && inputNode.getRightNode() == null)
 		{
+			System.out.println("here??");
 			return size(inputNode.getLeftNode()) + 1;
 		}
 		
 		else if(inputNode.getRightNode() != null && inputNode.getLeftNode() == null)
 		{
+			System.out.println("here2??");
 			return size(inputNode.getRightNode()) + 1;
 		}
 		//TODO: change to getNode...null references
