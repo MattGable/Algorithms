@@ -83,6 +83,7 @@ public class BinarySearchTree
 	{
 		if (inputNode == null)
 		{
+			System.out.println("Node is null");
 			return 0;
 		}
 		
