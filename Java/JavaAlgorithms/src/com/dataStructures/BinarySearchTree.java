@@ -78,16 +78,28 @@ public class BinarySearchTree
 	{
 		return size(root);
 	}
-	
+	//TODO: Fix implementation!
 	private int size (BstNode inputNode)
 	{
+		
 		if (inputNode == null)
 		{
 			return 0;
 		}
-		else
+		
+		else if (inputNode.getLeftNode() != null && inputNode.getRightNode() == null)
 		{
-			return 111;
+			return size(inputNode.getLeftNode()) + 1;
+		}
+		
+		else if(inputNode.getRightNode() != null && inputNode.getLeftNode() == null)
+		{
+			return size(inputNode.getRightNode()) + 1;
+		}
+		//TODO: change to getNode...null references
+		else //if (inputNode.getLeftNode() != null && inputNode.getRightNode() !=  null)
+		{
+			return size(inputNode.getLeftNode()) + 2 + size(inputNode.getRightNode());
 		}
 	}
 	

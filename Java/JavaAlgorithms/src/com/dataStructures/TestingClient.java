@@ -45,7 +45,8 @@ public class TestingClient
 		newBinarySearchTree.printTreeRoot();
 
 		
-		System.out.println(emptyTree.size());
+		System.out.println("EMpty tree size is: " + emptyTree.size());
+		System.out.println("Large tree size is: " + newBinarySearchTree.size());
 		
 	}
 
