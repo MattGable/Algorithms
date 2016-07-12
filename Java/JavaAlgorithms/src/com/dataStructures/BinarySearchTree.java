@@ -79,6 +79,8 @@ public class BinarySearchTree
 		return size(root);
 	}
 	//TODO: Fix implementation!
+	//TODO: maybe add another base case, that is the root with two 
+	// subnodes
 	private int size (BstNode inputNode)
 	{
 		if (inputNode == null)
