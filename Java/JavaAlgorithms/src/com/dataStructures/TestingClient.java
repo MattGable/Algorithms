@@ -41,6 +41,10 @@ public class TestingClient
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 1);
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 3);
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 6);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 77);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 3);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 8);
+		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 12);
 		
 		newBinarySearchTree.printTreeRoot();
 		
@@ -48,7 +52,7 @@ public class TestingClient
 		System.out.println("Root's right: " + newBinarySearchTree.getRoot().getRightValue());
 
 		
-		System.out.println("EMpty tree size is: " + emptyTree.size());
+		//System.out.println("EMpty tree size is: " + emptyTree.size());
 		System.out.println("Large tree size is: " + newBinarySearchTree.size());
 		
 	}

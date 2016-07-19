@@ -25,7 +25,7 @@ public class BinarySearchTree
 		return root;
 	}
 	
-	//TODO: Finish implementation
+
 	public void insertNode (BstNode inputNode, int inputValue)
 	{
 
@@ -88,37 +88,39 @@ public class BinarySearchTree
 	{
 		return size(root);
 	}
-	//TODO: Fix implementation!
-	//TODO: maybe add another base case, that is the root with two 
-	// subnodes
+
 	private int size (BstNode inputNode)
 	{
-		if (inputNode == null)
+		if (inputNode.getValue() == 0)
 		{
-			System.out.println("Hit a null node");
+			System.out.println("Empty tree.");
 			return 0;
 		}
-		
 		else if (inputNode.getLeftNode() != null && inputNode.getLeftNode().getValue() != 0 && 
 				 inputNode.getRightNode() != null && inputNode.getRightNode().getValue() != 0)
 		{
-			return size(inputNode.getLeftNode()) + 2 + size(inputNode.getRightNode());
+			System.out.println(inputNode.getValue() + "has 2 nonzero children.");
+			return size(inputNode.getLeftNode()) + 1 + size(inputNode.getRightNode());
 		}
-		
 		else if (inputNode.getLeftNode() != null && inputNode.getLeftNode().getValue() != 0 && inputNode.getRightNode() == null)
 		{
-			System.out.println("here??");
+			System.out.println(inputNode.getValue() + "has 1 nonzero child to the left (<)");
 			return size(inputNode.getLeftNode()) + 1;
 		}
 		
-		else if(inputNode.getRightNode() != null && inputNode.getRightNode().getValue() != 0 &&inputNode.getLeftNode() == null)
+		else if(inputNode.getRightNode() != null && inputNode.getRightNode().getValue() != 0 && inputNode.getLeftNode() == null)
 		{
-			System.out.println("here2??");
+			System.out.println(inputNode.getValue() + "has 1 nonzero child to the right (>)");
 			return size(inputNode.getRightNode()) + 1;
 		}
-		//TODO: change to getNode...null references
-		else //if (inputNode.getLeftNode() != null && inputNode.getRightNode() !=  null)
+		else if (inputNode.getLeftNode() == null && inputNode.getRightNode() == null)
 		{
+			System.out.println(inputNode.getValue() + "has no children.");
+			return 1;
+		}
+		else 
+		{
+			System.out.println("Other condition--inputNode.getValue(): " + inputNode.getValue());
 			return 0;
 		}
 	}
