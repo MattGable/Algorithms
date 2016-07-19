@@ -7,7 +7,7 @@ package com.dataStructures;
  * the parent, and the right node is always greater than
  * the parent. 
  * 
- * This implementation uses zero as a "blank" node.
+ * This implementation uses zero as a "blank" node. It also handles duplicates.
  * 
  * BinarySearchTree and BSTNode are written in response to the 
  * learning problems posed by Nick Parlante here:
