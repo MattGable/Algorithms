@@ -5,7 +5,9 @@ package com.dataStructures;
  * in a binary tree--each node has at most two
  * children. The left child node is always less than or equal to
  * the parent, and the right node is always greater than
- * the parent. This implementation uses zero as a "blank" value field.
+ * the parent. 
+ * 
+ * This implementation uses zero as a "blank" node.
  * 
  * BinarySearchTree and BSTNode are written in response to the 
  * learning problems posed by Nick Parlante here:
@@ -15,6 +17,7 @@ package com.dataStructures;
  */
 public class BinarySearchTree
 {
+	//Declare and initialize the root BstNode
 	private BstNode root = new BstNode();
 	
 	public BstNode getRoot ()
@@ -31,7 +34,7 @@ public class BinarySearchTree
 		if (inputNode.getValue() == 0)
 		{
 			inputNode.setValue(inputValue);
-			System.out.println("Placing the value of: " + inputNode.getValue());
+			System.out.println("Placed the value of: " + inputNode.getValue());
 			return;
 		}
 		
@@ -64,16 +67,16 @@ public class BinarySearchTree
 	}
 	
 	/**
-	 * A function to print the root node's value
+	 * print the root node's value
 	 */
 	public void printTreeRoot ()
 	{
-		if (root != null)
+		if (root.getValue() != 0)
 		{
-			System.out.println(root.getValue());
+			System.out.println("Root's value is: " + root.getValue());
 		}
 
-		else //if (root == null)
+		else //if (root.getValue() == 0)
 		{
 			System.out.println("Root is null");
 		}
@@ -92,7 +95,7 @@ public class BinarySearchTree
 	{
 		if (inputNode == null)
 		{
-			System.out.println("Node is null");
+			System.out.println("Hit a null node");
 			return 0;
 		}
 		
