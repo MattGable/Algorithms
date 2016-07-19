@@ -31,7 +31,7 @@ public class BinarySearchTree
 		if (inputNode.getValue() == 0)
 		{
 			inputNode.setValue(inputValue);
-			System.out.println("inputNode is: " + inputNode.getValue());
+			System.out.println("Placing the value of: " + inputNode.getValue());
 			return;
 		}
 		
@@ -43,6 +43,7 @@ public class BinarySearchTree
 				inputNode.initializeLeftNode();
 			}
 			
+			System.out.println("Moving down the tree to the left (<)...");
 			insertNode (inputNode.getLeftNode(), inputValue);
 		}
 		
@@ -53,10 +54,13 @@ public class BinarySearchTree
 			{
 				inputNode.initializeRightNode();
 			}
+			
+			System.out.println("Moving down the tree to the right (>)...");
 			insertNode (inputNode.getRightNode(), inputValue);
+			
 		}
 		
-		System.out.println("HII");
+		
 	}
 	
 	/**
