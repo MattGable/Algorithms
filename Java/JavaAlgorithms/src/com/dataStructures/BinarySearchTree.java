@@ -99,13 +99,19 @@ public class BinarySearchTree
 			return 0;
 		}
 		
-		else if (inputNode.getLeftNode() != null && inputNode.getRightNode() == null)
+		else if (inputNode.getLeftNode() != null && inputNode.getLeftNode().getValue() != 0 && 
+				 inputNode.getRightNode() != null && inputNode.getRightNode().getValue() != 0)
+		{
+			return size(inputNode.getLeftNode()) + 2 + size(inputNode.getRightNode());
+		}
+		
+		else if (inputNode.getLeftNode() != null && inputNode.getLeftNode().getValue() != 0 && inputNode.getRightNode() == null)
 		{
 			System.out.println("here??");
 			return size(inputNode.getLeftNode()) + 1;
 		}
 		
-		else if(inputNode.getRightNode() != null && inputNode.getLeftNode() == null)
+		else if(inputNode.getRightNode() != null && inputNode.getRightNode().getValue() != 0 &&inputNode.getLeftNode() == null)
 		{
 			System.out.println("here2??");
 			return size(inputNode.getRightNode()) + 1;
@@ -113,7 +119,7 @@ public class BinarySearchTree
 		//TODO: change to getNode...null references
 		else //if (inputNode.getLeftNode() != null && inputNode.getRightNode() !=  null)
 		{
-			return size(inputNode.getLeftNode()) + 2 + size(inputNode.getRightNode());
+			return 0;
 		}
 	}
 	
