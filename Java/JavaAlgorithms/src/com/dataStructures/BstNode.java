@@ -27,6 +27,16 @@ public class BstNode
 		return rightNode.getValue();
 	}
 	
+	public void initializeLeftNode()
+	{
+		leftNode = new BstNode();
+	}
+	
+	public void initializeRightNode()
+	{
+		rightNode = new BstNode();
+	}
+	
 	public BstNode getLeftNode ()
 	{
 		return leftNode;
