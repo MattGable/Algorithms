@@ -146,6 +146,41 @@ public class BinarySearchTree
 		}
 	}
 	
+	/**
+	 * Iterates over the tree and returns the first occurrence of the minimum 
+	 * (leftmost) value in the tree.
+	 * @return The first occurrence of the minimum node value in the tree.
+	 */
+	public int getMin()
+	{
+		BstNode iteratorNode = root;
+		
+		while (iteratorNode.getLeftNode() != null)
+		{
+			iteratorNode = iteratorNode.getLeftNode();
+		}
+		
+		return iteratorNode.getValue();
+	}
+	
+	/**
+	 * Iterates over the tree and returns the first occurrence of the maximum
+	 * (rightmost) value in the tree.
+	 * @return The first occurrence of the maximum node value in the tree.
+	 */
+	public int getMax()
+	{
+		BstNode iteratorNode = root;
+		
+		while (iteratorNode.getRightNode() != null)
+		{
+			iteratorNode = iteratorNode.getRightNode();
+		}
+		
+		return iteratorNode.getValue();
+	}
+	
+	
 	
 	//TODO: complete this implementation
 	/**

@@ -45,6 +45,8 @@ public class TestingClient
 		newBinarySearchTree.insertNode(newBinarySearchTree.getRoot(), 12);
 
 		System.out.println("Large tree size is: " + newBinarySearchTree.size());
+		System.out.println("The minimum is: " + newBinarySearchTree.getMin());
+		System.out.println("The maximum is: " + newBinarySearchTree.getMax());
 		
 	}
 
